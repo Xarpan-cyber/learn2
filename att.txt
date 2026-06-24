@@ -1,0 +1,49 @@
+<!DOCTYPE html> tells the browser this page is written in HTML5.
+
+
+meta charset="UTF-8" makes sure all text and symbols display correctly without errors.
+
+
+title sets the name shown on the browser tab, here it shows "Student Registration Form".
+
+link rel="stylesheet" href="style.css" connects the CSS file to style the page. rel="stylesheet" tells the browser it is a stylesheet, and href="style.css" gives the path of the CSS file.
+
+form action="/submit" method="POST" creates the form and decides how data is sent. action="/submit" is the page where form data goes after submit, and method="POST" sends data securely without showing it in the URL.
+
+h1 displays the main heading, here it shows "Course Enrollment Form".
+
+table class="course-table" creates a table to show course details, and class="course-table" is the name used to style the table with CSS.
+
+thead groups the header row of the table, like the titles Course, Duration, Fee.
+
+tr creates a table row.
+
+th creates a header cell with bold text, used for titles.
+
+tbody groups the actual data rows of the table.
+
+br adds a line break so the next content moves to a new line.
+
+label for="fullname" shows text next to an input box so the user knows what to fill, and for="fullname" connects this label to the input having id="fullname".
+
+input type="text" id="fullname" name="fullname" placeholder="..." required creates a text box for the name. type="text" accepts normal text, id="fullname" is the unique name for this input, name="fullname" is used when form data is sent, placeholder shows hint text inside the box, and required means the field must be filled before submitting.
+
+input type="email" works the same as text input but also checks that the entered text looks like a valid email address.
+
+input type="tel" is used for entering a phone number.
+
+input type="date" shows a calendar popup so the user can pick a date easily.
+
+input type="radio" id="male" name="gender" value="male" lets the user pick only one option among many, like gender. name="gender" groups all radio buttons together so only one can be selected at a time, and value="male" is the data sent if this option is chosen.
+
+select id="course" name="course" creates a dropdown list so the user can pick one course.
+
+option value="html" is one item inside the dropdown list, and value="html" is the data sent if this option is selected.
+
+input type="file" id="file" name="file" lets the user upload a file like a marksheet from their computer.
+
+input type="checkbox" id="terms" name="terms" required is a small box the user can tick to agree to terms, and required means it must be ticked before submitting.
+
+button type="submit" sends the form data when clicked.
+
+button type="reset" clears all the filled data and resets the form back to empty.
