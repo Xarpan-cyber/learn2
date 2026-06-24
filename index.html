@@ -1,13 +1,113 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>My First Web Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h1>Hello World!</h1>
-    <p>This is my first HTML page.</p>
-</body>
 
+    <form action="/submit" method="POST">
+
+        <h1>Course Enrollment Form</h1>
+
+        <table class="course-table">
+            <thead>
+                <tr>
+                    <th>Course</th>
+                    <th>Duration</th>
+                    <th>Fee</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML & CSS Basics</td>
+                    <td>4 Weeks</td>
+                    <td>₹999</td>
+                </tr>
+                <tr>
+                    <td>JavaScript Fundamentals</td>
+                    <td>6 Weeks</td>
+                    <td>₹1499</td>
+                </tr>
+                <tr>
+                    <td>Python Programming</td>
+                    <td>8 Weeks</td>
+                    <td>₹1999</td>
+                </tr>
+                <tr>
+                    <td>Full Stack Web Development</td>
+                    <td>12 Weeks</td>
+                    <td>₹4999</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <br>
+        
+        <!-- Name Input -->
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+
+        <!-- Email Input -->
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
+
+        <!-- Phone Number Input -->
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="Enter phone number"><br><br>
+
+        <!-- Date of Birth Input -->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Gender Selection (Radio Buttons) -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <!-- Course Dropdown Select -->
+        <label for="course">Select Course:</label><br>
+        <select id="course" name="course">
+            <option value="html">HTML & CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="web-dev">Web Development</option>
+        </select><br><br>
+
+        <!-- Department Dropdown Select -->
+        <label for="department">Select Department:</label><br>
+        <select id="department" name="department">
+            <option value="cse">CSE</option>
+            <option value="cybersecurity">Cybersecurity</option>
+            <option value="datascience">Data Science</option>
+            <option value="aiml">AIML</option>
+        </select><br><br>
+
+        <!-- Address Textarea -->
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="35" placeholder="Enter your address"></textarea><br><br>
+
+        <!-- File Upload -->
+        <label for="file">Upload Marksheet/Document:</label><br>
+        <input type="file" id="file" name="file"><br><br>
+
+        <!-- Terms Agreement Checkbox -->
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label><br><br>
+
+        <!-- Buttons -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+</body>
 </html>

@@ -1,0 +1,121 @@
+/* style.css - Simple Grayscale Stylesheet (No Color) */
+
+/* Body: Styles the background and text font of the entire webpage */
+body {
+    font-family: Arial, sans-serif;  /* Use a clean font instead of default font */
+    background-color: #fafafa;       /* A very light gray background */
+    color: #222222;                  /* Dark gray/black text color */
+    margin: 40px;                    /* Add space around the webpage */
+}
+
+/* Heading: Styles the title of the form */
+h1 {
+    text-align: center;              /* Centers the heading text */
+    color: #092753;                  /* Pure black color for the heading */
+    margin-bottom: 20px;
+}
+
+/* Course Table: Styles the course information table */
+.course-table {
+    max-width: 500px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;       /* Add a solid border around the table */
+}
+
+.course-table th, 
+.course-table td {
+    padding: 10px 12px;
+    text-align: left;
+    border: 1px solid #dddddd;       /* Grid lines for cells */
+}
+
+/* Table Header styling */
+.course-table th {
+    background-color: #f2f2f2;       /* Light gray background for headers */
+    color: #000000;                  /* Black text */
+    font-weight: bold;
+}
+
+/* Form: Styles the box container around the form fields */
+form {
+    background-color: #ffffff;       /* White background for the form box */
+    max-width: 500px;                /* Sets the maximum width of the form */
+    margin: 0 auto;                  /* Centers the form box horizontally */
+    padding: 30px;                   /* Adds space inside the form border */
+    border: 1px solid #dddddd;       /* Adds a thin light gray border around the form */
+}
+
+/* Label: Styles the text labels above inputs */
+label {
+    font-weight: bold;               /* Makes the label text bold */
+    color: #1b0d31;                  /* Dark gray text */
+}
+
+/* Input Fields: Styles text boxes, email boxes, phone boxes, date selectors, selects, and textareas */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;                     /* Makes the input fields take the full width of the form */
+    padding: 8px;                    /* Adds space inside the input boxes for easy typing */
+    margin-top: 5px;                 /* Adds a small space between the label and the input */
+    border: 1px solid #cccccc;       /* Adds a thin gray border around the input boxes */
+    box-sizing: border-box;          /* Makes sure padding is included in the total width */
+}
+
+/* Input Focus: Styles the input fields when clicked/active */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #000000;           /* Changes border to black when clicked */
+    outline: none;
+}
+
+/* Radio & Checkbox cursor styling */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+/* Submit and Reset Buttons */
+button {
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Submit Button: Styles the submit button */
+button[type="submit"] {
+    background-color: #000000;       /* Black background */
+    color: #ffffff;                  /* White text */
+    border: 1px solid #000000;
+}
+
+/* Submit Button Hover */
+button[type="submit"]:hover {
+    background-color: #333333;       /* Dark gray background on hover */
+    border-color: #333333;
+}
+
+/* Reset Button: Styles the reset button */
+button[type="reset"] {
+    background-color: #ffffff;       /* White background */
+    color: #333333;                  /* Dark gray text */
+    border: 1px solid #cccccc;       /* Adds a thin border */
+    margin-left: 10px;               /* Adds a space between the two buttons */
+}
+
+/* Reset Button Hover */
+button[type="reset"]:hover {
+    background-color: #eeeeee;       /* A light gray when hovered */
+}
